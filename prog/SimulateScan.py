@@ -71,22 +71,7 @@ def read_synthetic_data(filename):
 # JunoMultiRetrieval extends the functionality of JunoRetrieval by allowing combining multiple observations
 # so as to reduce the retrieval error.
 class JunoMultiRetrieval(JunoRetrieval):
-
-    ## Constructor
-    # @param model JunoAtmosphere object
-    # @param features Same as ...
-    # @param eps Same as ...
-    # @param report Same as ...
-    def __init__(self, 
-            model, 
-            features = [], 
-            eps = 1.E-3, 
-            report = 'fit-report.txt'):
-        self.model = model
-        self.features = features
-        self.n_features = len(features)
-        self.eps = eps
-        self.report = report
+    # Base class constructor will be inherited
 
     ## Override the loss function in JunoRetrieval
     def loss_function(self, 
