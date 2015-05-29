@@ -1,0 +1,12 @@
+# Ammonia enrichment factor
+5.0
+# Water enrichment factor
+3.0
+# Limb darkening error
+0.001
+# Brightness temperature error
+30
+# Latitude [13]
+90. 75. 60. 45. 30. 15. 0. -15. -30. -45. -60. -75. -90.
+# Stretch parameter [1. + abs(sin(2 * lat * pi / 180.)), 13]
+1. 1.5 1.86 2. 1.86 1.5 1. 1.5 1.86 2. 1.86 1.5 1.
