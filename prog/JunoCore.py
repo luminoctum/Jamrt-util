@@ -16,7 +16,7 @@ import h5py, subprocess, os, operator, random, glob
 
 ## Read a parameter list, return a parameter string concatenated by '-'
 # used to generate forward model output file name
-# @param param Python list of parameters
+# @param params Python list of parameters
 def parameter_to_string(params):
     return reduce(operator.add, ['-'+str(x) for x in params[1:]], str(params[0]))
 
@@ -75,6 +75,7 @@ def create_grid_pool(model,
 ## Create a grid statevector used for training a learning model
 # @param model JunoAtmosphere object
 # @param types 'sat' or 'stretch'
+# @param num number of randoms cases
 # @param xNH3 NH3 mixing ratio
 # @param xH2O H2O mixing ratio
 # @param folder folder containing the model outputs
